@@ -817,7 +817,7 @@ ul {
 }
 
 .block-header__slide-one {
-  background-image: url(./img/Blanchard/heroslideone.jpg);
+  background-image: url(../img/Blanchard/heroslideone.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -825,7 +825,7 @@ ul {
 }
 
 .block-header__slide-two {
-  background-image: url(./img/Blanchard/heroslidetwo.jpg);
+  background-image: url(../img/Blanchard/heroslidetwo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -833,7 +833,7 @@ ul {
 }
 
 .block-header__slide-three {
-  background-image: url(./img/Blanchard/heroslidethree.jpg);
+  background-image: url(../img/Blanchard/heroslidethree.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
