@@ -638,29 +638,49 @@ validateForms(".form", {
 });
 
 ymaps.ready(init);
-function init() {
-  var myMap = new ymaps.Map("map", {
-    center: [55.758468, 37.601088],
-    zoom: 16,
-  });
-  var myPlacemark = new ymaps.Placemark(
-    [55.758468, 37.601088],
-    {},
-    {
-      iconLayout: "default#image",
-      iconImageHref: "../img/blanchard/markermap.svg",
-      iconImageSize: [20, 20],
-    }
-  );
-  myMap.geoObjects
-  .add(myPlacemark)
-  //.add(myPlacemarkWithContent);
+
+function init () {
+    var myMap = new ymaps.Map('map', {
+            center: [55.758468, 37.601088],
+            zoom: 16
+        }),
+
+        myPlacemark1 = new ymaps.Placemark([55.758468, 37.601088], {
+            balloonContent: 'Маленькая иконка'
+        }, {
+            iconLayout: 'default#image',
+            //iconImageClipRect: [[0,0], [26, 47]],
+            iconImageHref: 'img/blanchard/markermap.svg',
+            iconImageSize: [15, 15],
+            //iconImageOffset: [-15, -27],
+        })
+
+    myMap.geoObjects.add(myPlacemark1)
+       
 }
+
+//ymaps.ready(init);
+//function init() {
+ // var myMap = new ymaps.Map("map", {
+ //   center: [55.758468, 37.601088],
+ //   zoom: 16,
+ // });
+ // var myPlacemark = new ymaps.Placemark(
+ //   [55.758468, 37.601088],
+ //   {},
+ //   {
+ //     iconLayout: "default#image",
+ //     iconImageHref: "img/blanchard/markermap.svg",
+ //     iconImageSize: [20, 20],
+ //   }
+ // );
+ // myMap.geoObjects.add(myPlacemark);
+  
+//}
 
 $(function () {
   $(".section-catalog__list-accordion").accordion({
     heightStyle: "content",
   });
 });
-
 
