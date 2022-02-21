@@ -46,9 +46,9 @@ document.addEventListener("DOMContentLoaded", function () {
   let mySwiper = new Swiper(slider, {
     //Optional parameters
     slidesPerView: 1,
-    speed: 213,
+    speed: 2000,
     autoplay: {
-      delay: 213,
+      delay: 2000,
     },
 
     effect: "fade",
@@ -489,8 +489,6 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("resize", () => {
     mSlider();
   });
-
-  
   
   //tooltip
   tippy(".section-project__tooltip", {
@@ -649,7 +647,7 @@ function init () {
             balloonContent: 'Мы здесь!'
         }, {
             iconLayout: 'default#image',
-            iconImageHref: '../../img/blanchard/markermappng.png',
+            iconImageHref: '../img/blanchard/markermappng.png',
             iconImageSize: [15, 15],
             iconImageOffset: [-1, -1],
         })
