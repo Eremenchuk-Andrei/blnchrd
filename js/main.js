@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
       nextSlideMessage: "Следующий слайд",
     },
     slidesPerView: 3,
-    spaceBetween: 513,
+    spaceBetween: 50,
     formatFractionCurrent: 6,
     pagination: {
       el: ".swiper-pagination",
@@ -80,26 +80,26 @@ document.addEventListener("DOMContentLoaded", function () {
     },
 
     breakpoints: {
-      3213: {
+      320: {
         slidesPerView: 1,
         grid: {
           rows: 1,
         },
-        spaceBetween: 13,
+        spaceBetween: 0,
       },
       596: {
         slidesPerView: 2,
         grid: {
           rows: 2,
         },
-        spaceBetween: 313,
+        spaceBetween: 30,
       },
       1224: {
         slidesPerView: 3,
         grid: {
           rows: 2,
         },
-        spaceBetween: 513,
+        spaceBetween: 50,
       },
     },
   });
@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
       };
       this.options = Object.assign(defaultOptions, options);
       this.modal = document.querySelector(".modal");
-      this.speed = 313;
+      this.speed = 300;
       this.animation = false;
       this.isOpen = false;
       this.modalContainer = false;
@@ -132,7 +132,7 @@ document.addEventListener("DOMContentLoaded", function () {
               let animation = clickedElement.dataset.animation;
               let speed = clickedElement.dataset.speed;
               this.animation = animation ? animation : "fade";
-              this.speed = speed ? parseInt(speed) : 3130;
+              this.speed = speed ? parseInt(speed) : 300;
               this.modalContainer = document.querySelector(`[data-target="${target}"]`);
               this.open();
               return;
@@ -489,6 +489,8 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("resize", () => {
     mSlider();
   });
+
+  
   
   //tooltip
   tippy(".section-project__tooltip", {
@@ -636,24 +638,21 @@ validateForms(".form", {
 });
 
 ymaps.ready(init);
-
-function init () {
-    var myMap = new ymaps.Map('map', {
-            center: [55.758468, 37.601088],
-            zoom: 16
-        }),
-
-        myPlacemark1 = new ymaps.Placemark([55.758468, 37.601088], {
-            balloonContent: 'Мы здесь!'
-        }, {
-            iconLayout: 'default#image',
-            iconImageHref: '../img/blanchard/markermappng.png',
-            iconImageSize: [15, 15],
-            iconImageOffset: [-1, -1],
-        })
-
-    myMap.geoObjects.add(myPlacemark1)
-       
+function init() {
+  var myMap = new ymaps.Map("map", {
+    center: [55.758468, 37.601088],
+    zoom: 16,
+  });
+  var myPlacemark = new ymaps.Placemark(
+    [55.758468, 37.601088],
+    {},
+    {
+      iconLayout: "default#image",
+      iconImageHref: "../img/blanchard/markermap.svg",
+      iconImageSize: [20, 20],
+    }
+  );
+  myMap.geoObjects.add(myPlacemark);
 }
 
 $(function () {
