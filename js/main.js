@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let slider = document.querySelector(".block-header__slider-hero");
   let mySwiper = new Swiper(slider, {
     //Optional parameters
-    slidesPerView: 1,
+    slidesPerView: 3,
     speed: 2000,
     autoplay: {
       delay: 2000,
