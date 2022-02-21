@@ -490,6 +490,8 @@ document.addEventListener("DOMContentLoaded", function () {
     mSlider();
   });
 
+  
+  
   //tooltip
   tippy(".section-project__tooltip", {
     content: "Пример современных тенденций - современная методология разработки",
@@ -650,7 +652,9 @@ function init() {
       iconImageSize: [20, 20],
     }
   );
-  myMap.geoObjects.add(myPlacemark);
+  myMap.geoObjects
+  .add(myPlacemark)
+  //.add(myPlacemarkWithContent);
 }
 
 $(function () {
@@ -658,4 +662,5 @@ $(function () {
     heightStyle: "content",
   });
 });
+
 
