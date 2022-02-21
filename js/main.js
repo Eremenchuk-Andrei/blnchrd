@@ -646,7 +646,7 @@ function init() {
     {},
     {
       iconLayout: "default#image",
-      iconImageHref: "img/blanchard/markermap.svg",
+      iconImageHref: "../img/blanchard/markermap.svg",
       iconImageSize: [20, 20],
     }
   );
