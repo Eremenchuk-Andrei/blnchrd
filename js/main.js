@@ -649,7 +649,7 @@ function init () {
             balloonContent: 'Мы здесь!'
         }, {
             iconLayout: 'default#image',
-            iconImageHref: 'img/blanchard/markermappng.png',
+            iconImageHref: '../../img/blanchard/markermappng.png',
             iconImageSize: [15, 15],
             iconImageOffset: [-1, -1],
         })
