@@ -46,9 +46,9 @@ document.addEventListener("DOMContentLoaded", function () {
   let mySwiper = new Swiper(slider, {
     //Optional parameters
     slidesPerView: 1,
-    speed: 2000,
+    speed: 213,
     autoplay: {
-      delay: 2000,
+      delay: 213,
     },
 
     effect: "fade",
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
       nextSlideMessage: "Следующий слайд",
     },
     slidesPerView: 3,
-    spaceBetween: 50,
+    spaceBetween: 513,
     formatFractionCurrent: 6,
     pagination: {
       el: ".swiper-pagination",
@@ -80,26 +80,26 @@ document.addEventListener("DOMContentLoaded", function () {
     },
 
     breakpoints: {
-      320: {
+      3213: {
         slidesPerView: 1,
         grid: {
           rows: 1,
         },
-        spaceBetween: 0,
+        spaceBetween: 13,
       },
       596: {
         slidesPerView: 2,
         grid: {
           rows: 2,
         },
-        spaceBetween: 30,
+        spaceBetween: 313,
       },
       1224: {
         slidesPerView: 3,
         grid: {
           rows: 2,
         },
-        spaceBetween: 50,
+        spaceBetween: 513,
       },
     },
   });
@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
       };
       this.options = Object.assign(defaultOptions, options);
       this.modal = document.querySelector(".modal");
-      this.speed = 300;
+      this.speed = 313;
       this.animation = false;
       this.isOpen = false;
       this.modalContainer = false;
@@ -132,7 +132,7 @@ document.addEventListener("DOMContentLoaded", function () {
               let animation = clickedElement.dataset.animation;
               let speed = clickedElement.dataset.speed;
               this.animation = animation ? animation : "fade";
-              this.speed = speed ? parseInt(speed) : 300;
+              this.speed = speed ? parseInt(speed) : 3130;
               this.modalContainer = document.querySelector(`[data-target="${target}"]`);
               this.open();
               return;
@@ -646,37 +646,17 @@ function init () {
         }),
 
         myPlacemark1 = new ymaps.Placemark([55.758468, 37.601088], {
-            balloonContent: 'Маленькая иконка'
+            balloonContent: 'Мы здесь!'
         }, {
             iconLayout: 'default#image',
-            //iconImageClipRect: [[0,0], [26, 47]],
-            iconImageHref: 'img/blanchard/markermap.svg',
+            iconImageHref: 'img/blanchard/markermappng.png',
             iconImageSize: [15, 15],
-            //iconImageOffset: [-15, -27],
+            iconImageOffset: [-1, -1],
         })
 
     myMap.geoObjects.add(myPlacemark1)
        
 }
-
-//ymaps.ready(init);
-//function init() {
- // var myMap = new ymaps.Map("map", {
- //   center: [55.758468, 37.601088],
- //   zoom: 16,
- // });
- // var myPlacemark = new ymaps.Placemark(
- //   [55.758468, 37.601088],
- //   {},
- //   {
- //     iconLayout: "default#image",
- //     iconImageHref: "img/blanchard/markermap.svg",
- //     iconImageSize: [20, 20],
- //   }
- // );
- // myMap.geoObjects.add(myPlacemark);
-  
-//}
 
 $(function () {
   $(".section-catalog__list-accordion").accordion({
