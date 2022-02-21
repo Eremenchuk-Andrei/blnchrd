@@ -125,9 +125,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     events() {
       if (this.modal) {
-        document.addEventListener(
-          "click",
-          function (e) {
+         document.addEventListener("click", function (e) {
             const clickedElement = e.target.closest(".section-editions__modal-open");
             if (clickedElement) {
               let target = clickedElement.dataset.path;
