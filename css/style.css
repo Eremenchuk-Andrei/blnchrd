@@ -357,9 +357,11 @@ ul {
   display: flex;
 }
 
+
 .block-header__input-search {
   width: 220px;
   padding: 0;
+  border-radius: 0;
   margin-bottom: 5px;
   background-color: transparent;
   border: none;
@@ -2033,6 +2035,7 @@ ul {
   padding: 3px;
   padding-left: 10px;
   border: 1px solid transparent;
+  border-radius: 0;
   outline: 1px solid transparent;
   -webkit-transition-property: outline-color, background-color;
   -o-transition-property: outline-color, background-color;
@@ -4361,7 +4364,7 @@ button.tippy-box {
   .section-publ__link-order {
     font-size: 12px;
     line-height: 16px;
-    padding: 7px 12px 7px 12px;
+    padding: 8px 12px 7px 12px;
     max-width: 89%;
     text-align: center;
   }
