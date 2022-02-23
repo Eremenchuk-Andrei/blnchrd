@@ -3602,7 +3602,7 @@ button.tippy-box {
   }
 
   .section-publ__article {
-    height: initial;
+    height: 100%;
   }
 
   .section-publ__text-block-slide {
@@ -4049,6 +4049,7 @@ button.tippy-box {
 
   .block-header__menu-burger span {
     width: 20px;
+    top: 0;
   }
 
   .block-header__menu-burger::before {
