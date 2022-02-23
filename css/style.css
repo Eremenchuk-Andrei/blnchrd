@@ -2671,6 +2671,10 @@ button.tippy-box {
   filter: grayscale(1);
 }
 
+[class*="copyrights-pane"] {
+  display: none;
+}
+
 /*--------------------------footer ---------------------------------*/
 
 .footer {
