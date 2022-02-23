@@ -4261,7 +4261,7 @@ button.tippy-box {
   .section-publ__chekbox-element::after {
     content: "";
     position: absolute;
-    background-image: url(/img/Blanchard/close.svg);
+    background-image: url(../img/Blanchard/close.svg);
     width: 12px;
     height: 12px;
     right: 0px;
