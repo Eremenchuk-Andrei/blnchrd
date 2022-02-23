@@ -3748,7 +3748,7 @@ button.tippy-box {
 
   .block-header__menu-burger.burger_active::before {
     width: 25px;
-    top: 5px;
+    bottom: 0;
   }
 
   .block-header__menu-burger::after {
@@ -3759,10 +3759,7 @@ button.tippy-box {
     width: 16px;
   }
 
-  .block-header__menu-burger.burger_active span {
-    width: 25px;
-  }
-
+  
   .block-header__navigation-logo {
     top: calc(20% - 150px);
     padding-left: 15px;
@@ -4063,7 +4060,8 @@ button.tippy-box {
   }
 
   .block-header__menu-burger.burger_active span {
-    bottom: 13px;
+    top: 8px;
+    width: 25px;
   }
 
   .section-catalog__header-tabs {
